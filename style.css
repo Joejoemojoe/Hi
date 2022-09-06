@@ -1,0 +1,147 @@
+/* body{
+    padding: 0px;
+    background: rgba(193, 229, 255, 0.782);
+    margin: 0px;
+}
+h1{
+    text-indent: 20px;
+}
+p{
+    text-indent: 20px;
+}
+.cardbox{
+    height: 500px;
+    width: 450px;
+    margin-top: 5%;
+    perspective: 1000px;
+}
+.cardinnner{
+    position: relative;
+	width: 100%;
+	height: 100%;
+	background: grey;
+	border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+.cardfront{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.cardfront, .cardback{
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+    backface-visibility: hidden;
+}
+.cardback > .content{
+    width: 100%;
+    height: 100%;
+}
+.stats {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 200px;
+	background: rgba(219, 77, 77, 0.54);
+	border-radius: 10px;	
+}
+.cardbox:hover .cardinnner{
+    transform: rotateY(180deg);
+}
+.cardback{
+    transform: rotateY(180deg);
+}
+
+ */
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.cardbox {
+	width: 450px;
+	height: 500px;
+	margin-top: 5%;
+	perspective: 1000px;
+}
+
+.cardinner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: grey;
+	border-radius: 10px;
+	transform-style: preserve-3d;
+	transition: 1s ease;
+}
+
+.cardfront {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+img {
+	width: 100%;
+	height: 100%;	
+	border-radius: 10px;
+}
+
+.cardfront, .cardback {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	backface-visibility: hidden;
+}
+
+.cardback > .content {
+	width: 100%;
+	height: 100%;	
+}
+
+.stats {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 200px;
+	background: rgba(0, 0, 0, 0.65);
+	border-radius: 10px;	
+}
+h1 {
+	color: red;
+	text-indent: 20px;
+	font-size: 30px;
+}
+
+p {
+	color: rgb(255, 255, 255);
+	text-indent: 20px;
+	font-size: 18px;
+}
+
+.cardbox:hover .cardinner {
+	transform: rotateY(180deg);
+}
+
+.cardback {
+    transform: rotateY(180deg);
+}
